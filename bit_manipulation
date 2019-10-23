@@ -19,7 +19,10 @@ int int_to_bin(int x)
 }
 int main()
 {
+    int num;
     cout << "Hello world!" << endl;
-    cout<<"The binary value of 4 is "<<int_to_bin(4);
+    cout<<"Enter a number: "<<endl;
+    cin>>num;
+    cout<<"The binary value of "<<num<<" is "<<int_to_bin(num);
     return 0;
 }
