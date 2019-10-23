@@ -17,12 +17,21 @@ int int_to_bin(int x)
     //return x>>1;
     return int_to_bin(x/2) * 10 + x%2;
 }
+int power_of_two(int x)
+{
+    if(x & (x - 1))
+        cout<<x<<" is not a power of 2.";
+
+    else
+       cout<<x<<" is a power of 2";
+}
 int main()
 {
     int num;
     cout << "Hello world!" << endl;
     cout<<"Enter a number: "<<endl;
     cin>>num;
-    cout<<"The binary value of "<<num<<" is "<<int_to_bin(num);
+    cout<<"The binary value of "<<num<<" is "<<int_to_bin(num)<<endl;
+    power_of_two(num);
     return 0;
 }
